@@ -10,7 +10,7 @@ RUN npm install
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-RUN ln -s /build-dir/node_modules node_modules
+RUN cp -r /build-dir/node_modules node_modules
 
 # Bundle app source
 COPY . /usr/src/app

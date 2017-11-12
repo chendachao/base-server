@@ -11,6 +11,7 @@ web:
     - ./src/:/usr/src/app/src/
     - ./node_modules:/usr/src/app/node_modules
     - ./command.sh:/command.sh
+
 db:
   image: mongo:3.3
   ports:
