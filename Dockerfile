@@ -1,10 +1,10 @@
-FROM node:6.3
+FROM node:6.11.5
 
 # Install app dependencies
 RUN mkdir /build-dir
 WORKDIR /build-dir
 COPY package.json /build-dir
-RUN npm install -g babel babel-runtime babel-register mocha nodemon
+#RUN npm install -g babel babel-runtime babel-register mocha nodemon
 RUN npm install
 
 # Create app directory
